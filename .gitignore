@@ -43,12 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-build/
-.flutter/
-.packages
-.dart_tool/
-firebase_options.dart
-android/app/google-services.json
-
-

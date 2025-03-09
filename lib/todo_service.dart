@@ -19,7 +19,7 @@ class TodoService{
     return _db.collection('tasks').doc(taskId).delete();
   }
 
-  Future<void> restoreTask(String taskId, Map<String, dynamic> taskData)  {
-    return _db.collection('tasks').doc(taskId).set(taskData);
+  Future<void> restoreTask(String taskId, Map<String, dynamic> taskData) async {
+    await _db.collection('tasks').doc(taskId).set(taskData);
   }
 }
